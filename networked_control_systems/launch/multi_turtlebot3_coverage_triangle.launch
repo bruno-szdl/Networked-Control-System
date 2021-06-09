@@ -44,7 +44,7 @@
     <node pkg="networked_control_systems" name="coverage_triangle_$(arg first_tb3)" type="coverage_or_formation_triangle.py" output="screen">
       <param name="robot_name" value="$(arg first_tb3)"/>
     </node>
-</group>
+  </group>
 
   <group ns = "$(arg second_tb3)">
     <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
@@ -59,7 +59,7 @@
     <node pkg="networked_control_systems" name="coverage_triangle_$(arg second_tb3)" type="coverage_or_formation_triangle.py" output="screen">
       <param name="robot_name" value="$(arg second_tb3)"/>
     </node>
-</group>
+  </group>
 
   <group ns = "$(arg third_tb3)">
     <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
@@ -74,6 +74,6 @@
     <node pkg="networked_control_systems" name="coverage_triangle_$(arg third_tb3)" type="coverage_or_formation_triangle.py" output="screen">
       <param name="robot_name" value="$(arg third_tb3)"/>
     </node>
-</group>
+  </group>
 
 </launch>

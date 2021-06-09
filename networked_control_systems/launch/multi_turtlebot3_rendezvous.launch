@@ -59,7 +59,7 @@
     <node pkg="networked_control_systems" name="rendezvous_$(arg first_tb3)" type="rendezvous.py" output="screen">
       <param name="robot_name" value="$(arg first_tb3)"/>
     </node>
-</group>
+  </group>
 
   <group ns = "$(arg second_tb3)">
     <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
@@ -74,7 +74,7 @@
     <node pkg="networked_control_systems" name="rendezvous_$(arg second_tb3)" type="rendezvous.py" output="screen">
       <param name="robot_name" value="$(arg second_tb3)"/>
     </node>
-</group>
+  </group>
 
   <group ns = "$(arg third_tb3)">
     <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
@@ -89,7 +89,7 @@
     <node pkg="networked_control_systems" name="rendezvous_$(arg third_tb3)" type="rendezvous.py" output="screen">
       <param name="robot_name" value="$(arg third_tb3)"/>
     </node>
-</group>
+  </group>
 
   <group ns = "$(arg fourth_tb3)">
     <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
@@ -104,7 +104,7 @@
     <node pkg="networked_control_systems" name="rendezvous_$(arg fourth_tb3)" type="rendezvous.py" output="screen">
       <param name="robot_name" value="$(arg fourth_tb3)"/>
     </node>
-</group>
+  </group>
 
   <group ns = "$(arg fifth_tb3)">
     <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
@@ -119,7 +119,7 @@
     <node pkg="networked_control_systems" name="rendezvous_$(arg fifth_tb3)" type="rendezvous.py" output="screen">
       <param name="robot_name" value="$(arg fifth_tb3)"/>
     </node>
-</group>
+  </group>
 
   <group ns = "$(arg sixth_tb3)">
     <param name="robot_description" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro" />
