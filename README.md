@@ -49,6 +49,16 @@ roslaunch networked_control_systems multi_turtlebot3_rendezvous.launch
 ```
 roslaunch networked_control_systems multi_turtlebot3_leader_follower.launch 
 ```
+You can control the leader robot using the keyboard
+
+wasd: to move around
+
+w/x : increase/decrease linear velocity (Burger : ~ 0.22, Waffle and Waffle Pi : ~ 0.26)
+
+a/d : increase/decrease angular velocity (Burger : ~ 2.84, Waffle and Waffle Pi : ~ 1.82)
+
+space key, s : force stop
+
 
 
 
