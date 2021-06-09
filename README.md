@@ -20,7 +20,7 @@ mkdir -p ~/catkin_ws/src
 Donwload the repo
 ```
 cd ~/catkin_ws/src
-git clone https://github.com/bruno-szdl/Networked-Control-System.git
+git clone https://github.com/bruno-szdl/Networked-Control-Systems.git
 ```
 Build the packages
 ```
