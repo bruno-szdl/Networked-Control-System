@@ -54,7 +54,7 @@
 
     <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model $(arg second_tb3) -x $(arg second_tb3_x_pos) -y $(arg second_tb3_y_pos) -z $(arg second_tb3_z_pos) -Y $(arg second_tb3_yaw) -param robot_description" />
     
-    <node pkg="networked_control_systems" name="coverage_triangle_$(arg second_tb3)" type="coverage_or_formation_triangle.py" output="screen">
+    <node pkg="networked_control_systems" name="formation_triangle_$(arg second_tb3)" type="coverage_or_formation_triangle.py" output="screen">
       <param name="robot_name" value="$(arg second_tb3)"/>
     </node>
   </group>
@@ -69,7 +69,7 @@
 
     <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-urdf -model $(arg third_tb3) -x $(arg third_tb3_x_pos) -y $(arg third_tb3_y_pos) -z $(arg third_tb3_z_pos) -Y $(arg third_tb3_yaw) -param robot_description" />
 
-    <node pkg="networked_control_systems" name="coverage_triangle_$(arg third_tb3)" type="coverage_or_formation_triangle.py" output="screen">
+    <node pkg="networked_control_systems" name="formation_triangle_$(arg third_tb3)" type="coverage_or_formation_triangle.py" output="screen">
       <param name="robot_name" value="$(arg third_tb3)"/>
     </node>
   </group>
