@@ -72,11 +72,9 @@ class SubAndPub:
                     n += 1
                     sum_x += distances[0,i] + random.uniform(-0.1, 0.1)
                     sum_y += distances[1,i] + random.uniform(-0.1, 0.1)
-        desired_x = this_robot_pos[0,0]
-        desired_y = this_robot_pos[1,0]
-        if n != 0:
-            desired_x += sum_x/n
-            desired_y += sum_y/n
+        desired_x = this_robot_pos[0,0] + sum_x
+        desired_y = this_robot_pos[1,0] + sum_y
+
         x_distance = desired_x - this_robot_pos[0,0]
         y_distance = desired_y - this_robot_pos[1,0]
 
