@@ -59,6 +59,45 @@ a/d : increase/decrease angular velocity (Burger : ~ 2.84, Waffle and Waffle Pi 
 
 space key, s : force stop
 
+### Coverage
+#### Small triangle
+```
+roslaunch networked_control_systems multi_turtlebot3_coverage_triangle.launch 
+```
+#### Big triangle
+```
+roslaunch networked_control_systems multi_turtlebot3_coverage_triangle.launch 
+```
+#### Square
+```
+roslaunch networked_control_systems multi_turtlebot3_coverage_big_triangle.launch 
+```
+
+### Formation
+
+You can control the leader robot using the keyboard
+
+wasd: to move around
+
+w/x : increase/decrease linear velocity (Burger : ~ 0.22, Waffle and Waffle Pi : ~ 0.26)
+
+a/d : increase/decrease angular velocity (Burger : ~ 2.84, Waffle and Waffle Pi : ~ 1.82)
+
+space key, s : force stop
+
+#### Small triangle
+```
+roslaunch networked_control_systems multi_turtlebot3_formation_triangle.launch 
+```
+#### Big triangle
+```
+roslaunch networked_control_systems multi_turtlebot3_formation_triangle.launch 
+```
+#### Square
+```
+roslaunch networked_control_systems multi_turtlebot3_formation_big_triangle.launch 
+```
+
 
 
 
